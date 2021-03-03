@@ -1,9 +1,9 @@
 @import "config";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-  
+
 body {
   @include background();
   background: $primary-color;
@@ -28,6 +28,23 @@ h3 {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+
+.link-container {
+  display: flex;
+}
+
+.link-btn {
+  border: 2px solid $secondary-color;
+  padding: 20px;
+  margin-left: 1em;
+  border-radius: 1em;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $secondary-color;
+    @include easeOut();
   }
 }
 

@@ -39,6 +39,19 @@ h3 {
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 91, 0.5); }
 
+.link-container {
+  display: flex; }
+
+.link-btn {
+  border: 2px solid #d6b917;
+  padding: 20px;
+  margin-left: 1em;
+  border-radius: 1em; }
+  .link-btn:hover {
+    background-color: #445;
+    color: #d6b917;
+    transition: all 0.5s ease-out; }
+
 .sub-text {
   font-size: 12px; }
 
