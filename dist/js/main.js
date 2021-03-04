@@ -12,14 +12,16 @@ function generatePlan() {
     let weeks = [];
 
     for (i = 1; i <= numberWeeks; i++) {
+        let week = [];
         for (w = 1; w <= numberDays; w++) {
-            let week = {
+            let day = {
                 week : i,
                 day : w,
                 miles : 3
             };
-            weeks.push(week);
-        } 
+            week.push(day);
+        }
+        weeks.push(week); 
     }
 
     console.log(weeks)
