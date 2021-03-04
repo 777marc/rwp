@@ -23,7 +23,5 @@ function generatePlan() {
         }
         weeks.push(week); 
     }
-
     console.log(weeks)
-
 }
