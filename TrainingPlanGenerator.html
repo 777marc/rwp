@@ -16,11 +16,45 @@
   <body id="bg-img">
     <main id="home">
       <h1>Select your training parameters:</h1>
-      <p>distance</p>
-      <p># of weeks</p>
-      <p>intensity (easy, medium, hard</p>
-      <p># of days per week</p>
-      <p>long run day</p>
+      <div class="select-container">
+        <label>distance</label>
+        <select id="distance">
+          <option value="13.1">13.1</option>
+          <option value="26.2">26.2</option>
+        </select>
+      </div>
+      <div class="select-container">
+        <label># of weeks</label>
+        <select id="number-weeks">
+          <option value="12">12</option>
+          <option value="16">14</option>
+          <option value="20">20</option>
+        </select>
+      </div>
+      
+      <div class="select-container">
+        <label>Intensity</label>
+        <select id="intensity">
+          <option value="0">Easy</option>
+          <option value="1">Medium</option>
+          <option value="2">Hard</option>
+        </select>
+      </div>
+      <div class="select-container">
+        <label># Days Per Week</label>
+        <select id="number-days">
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </div>
+      <div class="select-container">
+        <label>Long Run</label>
+        <select id="long-run">
+          <option value="5">Saturday</option>
+          <option value="6">Sunday</option>
+        </select>
+      </div>
       <div id="gen-btn" class="link-btn" onclick="generatePlan()">Generate</div>
     </main>
     <script src="./js/main.js"></script>
