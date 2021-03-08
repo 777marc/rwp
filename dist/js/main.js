@@ -17,11 +17,15 @@ function generatePlan() {
             let day = {
                 week : i,
                 day : w,
-                miles : 3
+                miles : getDistance(i, numberWeeks, intensity)
             };
             week.push(day);
         }
         weeks.push(week); 
     }
     console.log(weeks)
+}
+
+function getDistance(week, numWeeks, planIntensity) {
+    return 3;
 }
