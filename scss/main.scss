@@ -87,6 +87,11 @@ header {
   color: $secondary-color;
 }
 
+.generator-container {
+  margin: 20px;
+  padding: auto;
+}
+
 main {
   padding: 4rem;
   height: 100%;
@@ -106,7 +111,7 @@ main {
 
   &#home {
     overflow: hidden;
-    min-height: calc(100vh - 60px);
+    min-height: 100vh;
     h1 {
       margin-top: 20vh;
     }
